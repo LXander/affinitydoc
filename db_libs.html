@@ -1,0 +1,739 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>db_libs package &mdash; Affinity 0.0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="Affinity 0.0.1 documentation" href="index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Affinity
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">db_libs package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-db_libs.activity_op">db_libs.activity_op module</a></li>
+<li><a class="reference internal" href="#module-db_libs.binidng_affinity_op">db_libs.binidng_affinity_op module</a></li>
+<li><a class="reference internal" href="#module-db_libs.blast_op">db_libs.blast_op module</a></li>
+<li><a class="reference internal" href="#module-db_libs.convert_pdb_to_mol_op">db_libs.convert_pdb_to_mol_op module</a></li>
+<li><a class="reference internal" href="#module-db_libs.dock_op">db_libs.dock_op module</a></li>
+<li><a class="reference internal" href="#module-db_libs.download_pdb_op">db_libs.download_pdb_op module</a></li>
+<li><a class="reference internal" href="#module-db_libs.generate_conformers_op">db_libs.generate_conformers_op module</a></li>
+<li><a class="reference internal" href="#module-db_libs.get_decoys_op">db_libs.get_decoys_op module</a></li>
+<li><a class="reference internal" href="#module-db_libs.reorder_op">db_libs.reorder_op module</a></li>
+<li><a class="reference internal" href="#module-db_libs.save_record_tfr_op">db_libs.save_record_tfr_op module</a></li>
+<li><a class="reference internal" href="#module-db_libs.split_pdb_op">db_libs.split_pdb_op module</a></li>
+<li><a class="reference internal" href="#module-db_libs.test_multout_op">db_libs.test_multout_op module</a></li>
+<li><a class="reference internal" href="#module-db_libs.test_sum_op">db_libs.test_sum_op module</a></li>
+<li><a class="reference internal" href="#module-db_libs.write_ars2_tfr_op">db_libs.write_ars2_tfr_op module</a></li>
+<li><a class="reference internal" href="#module-db_libs">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Affinity</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>db_libs package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/db_libs.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="db-libs-package">
+<h1>db_libs package<a class="headerlink" href="#db-libs-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-db_libs.activity_op">
+<span id="db-libs-activity-op-module"></span><h2>db_libs.activity_op module<a class="headerlink" href="#module-db_libs.activity_op" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="db_libs.activity_op.Activity_init">
+<em class="property">class </em><code class="descclassname">db_libs.activity_op.</code><code class="descname">Activity_init</code><span class="sig-paren">(</span><em>data_dir</em>, <em>db_path</em><span class="sig-paren">)</span><a class="headerlink" href="#db_libs.activity_op.Activity_init" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="db_libs.activity_op.Activity_init.this_module">
+<code class="descname">this_module</code><em class="property"> = &lt;module 'db_libs.activity_op' from '/Users/Will/projects/reformat/op_libs/core/affinityDB/db_libs/activity_op.pyc'&gt;</em><a class="headerlink" href="#db_libs.activity_op.Activity_init.this_module" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="db_libs.activity_op.activity">
+<code class="descclassname">db_libs.activity_op.</code><code class="descname">activity</code><span class="sig-paren">(</span><em>pair_name</em>, <em>target_id</em>, <em>init='activity_init'</em><span class="sig-paren">)</span><a class="headerlink" href="#db_libs.activity_op.activity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Getting bioactivity result from local chembl database
+query by the target_chembl_id</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>pair_name</strong> – str:: combined receptor id and ligand info {receptor_id}_{chain}_{resnum}_{resname}</li>
+<li><strong>target_id</strong> – str:: chembl_target_id</li>
+<li><strong>init</strong> – str:: init function name</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">nested list:: [pair_name, aid, tid, mid, confidence_score, type, relation, value, unit, smile]</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-db_libs.binidng_affinity_op">
+<span id="db-libs-binidng-affinity-op-module"></span><h2>db_libs.binidng_affinity_op module<a class="headerlink" href="#module-db_libs.binidng_affinity_op" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="db_libs.binidng_affinity_op.Binidng_affinity_init">
+<em class="property">class </em><code class="descclassname">db_libs.binidng_affinity_op.</code><code class="descname">Binidng_affinity_init</code><span class="sig-paren">(</span><em>db_root</em>, <em>parse_type</em><span class="sig-paren">)</span><a class="headerlink" href="#db_libs.binidng_affinity_op.Binidng_affinity_init" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="db_libs.binidng_affinity_op.Binidng_affinity_init.parse_bindingdb">
+<code class="descname">parse_bindingdb</code><span class="sig-paren">(</span><em>binding_db_index</em><span class="sig-paren">)</span><a class="headerlink" href="#db_libs.binidng_affinity_op.Binidng_affinity_init.parse_bindingdb" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="db_libs.binidng_affinity_op.Binidng_affinity_init.parse_bindingmoad">
+<code class="descname">parse_bindingmoad</code><span class="sig-paren">(</span><em>binding_moad_index</em><span class="sig-paren">)</span><a class="headerlink" href="#db_libs.binidng_affinity_op.Binidng_affinity_init.parse_bindingmoad" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="db_libs.binidng_affinity_op.Binidng_affinity_init.parse_bindingmoad_entry">
+<code class="descname">parse_bindingmoad_entry</code><span class="sig-paren">(</span><em>entry</em><span class="sig-paren">)</span><a class="headerlink" href="#db_libs.binidng_affinity_op.Binidng_affinity_init.parse_bindingmoad_entry" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="db_libs.binidng_affinity_op.Binidng_affinity_init.parse_pdbbind">
+<code class="descname">parse_pdbbind</code><span class="sig-paren">(</span><em>pdb_bind_index</em><span class="sig-paren">)</span><a class="headerlink" href="#db_libs.binidng_affinity_op.Binidng_affinity_init.parse_pdbbind" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="db_libs.binidng_affinity_op.Binidng_affinity_init.this_module">
+<code class="descname">this_module</code><em class="property"> = &lt;module 'db_libs.binidng_affinity_op' from '/Users/Will/projects/reformat/op_libs/core/affinityDB/db_libs/binidng_affinity_op.pyc'&gt;</em><a class="headerlink" href="#db_libs.binidng_affinity_op.Binidng_affinity_init.this_module" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="db_libs.binidng_affinity_op.binding_affinity">
+<code class="descclassname">db_libs.binidng_affinity_op.</code><code class="descname">binding_affinity</code><span class="sig-paren">(</span><em>index_path</em>, <em>init='binding_affinity_init'</em><span class="sig-paren">)</span><a class="headerlink" href="#db_libs.binidng_affinity_op.binding_affinity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parse binding affinity record from index_path</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>index_path</strong> – record file</li>
+<li><strong>init</strong> – </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-db_libs.blast_op">
+<span id="db-libs-blast-op-module"></span><h2>db_libs.blast_op module<a class="headerlink" href="#module-db_libs.blast_op" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="db_libs.blast_op.Blast_init">
+<em class="property">class </em><code class="descclassname">db_libs.blast_op.</code><code class="descname">Blast_init</code><span class="sig-paren">(</span><em>data_dir</em>, <em>blast_db</em><span class="sig-paren">)</span><a class="headerlink" href="#db_libs.blast_op.Blast_init" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="db_libs.blast_op.Blast_init.this_module">
+<code class="descname">this_module</code><em class="property"> = &lt;module 'db_libs.blast_op' from '/Users/Will/projects/reformat/op_libs/core/affinityDB/db_libs/blast_op.pyc'&gt;</em><a class="headerlink" href="#db_libs.blast_op.Blast_init.this_module" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="db_libs.blast_op.blast">
+<code class="descclassname">db_libs.blast_op.</code><code class="descname">blast</code><span class="sig-paren">(</span><em>rec_outpath</em>, <em>lig_outpath</em>, <em>init='blast_init'</em><span class="sig-paren">)</span><a class="headerlink" href="#db_libs.blast_op.blast" title="Permalink to this definition">¶</a></dt>
+<dd><p>Applying protein sequence blast on the receptor</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>rec_outpath</strong> – str:: relative path of receptor</li>
+<li><strong>lig_outpath</strong> – str:: relative path of ligand</li>
+<li><strong>init</strong> – str:: init func name</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">nested list:: blast result contain  pair_name with receptor id and ligand name,</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>chembl_target_id for similar sequence in database,  ideitity number as num_match/align_length and
+the sequence of selected receptor</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-db_libs.convert_pdb_to_mol_op">
+<span id="db-libs-convert-pdb-to-mol-op-module"></span><h2>db_libs.convert_pdb_to_mol_op module<a class="headerlink" href="#module-db_libs.convert_pdb_to_mol_op" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="db_libs.convert_pdb_to_mol_op.ConvertPDBToMolInit">
+<em class="property">class </em><code class="descclassname">db_libs.convert_pdb_to_mol_op.</code><code class="descname">ConvertPDBToMolInit</code><a class="headerlink" href="#db_libs.convert_pdb_to_mol_op.ConvertPDBToMolInit" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="db_libs.convert_pdb_to_mol_op.ConvertPDBToMolInit.this_module">
+<code class="descname">this_module</code><em class="property"> = &lt;module 'db_libs.convert_pdb_to_mol_op' from '/Users/Will/projects/reformat/op_libs/core/affinityDB/db_libs/convert_pdb_to_mol_op.pyc'&gt;</em><a class="headerlink" href="#db_libs.convert_pdb_to_mol_op.ConvertPDBToMolInit.this_module" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="db_libs.convert_pdb_to_mol_op.convert_pdb_to_mol">
+<code class="descclassname">db_libs.convert_pdb_to_mol_op.</code><code class="descname">convert_pdb_to_mol</code><span class="sig-paren">(</span><em>cryst_lig_file</em>, <em>out_mol_path</em>, <em>init='convert_pdb_to_mol_init'</em><span class="sig-paren">)</span><a class="headerlink" href="#db_libs.convert_pdb_to_mol_op.convert_pdb_to_mol" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-db_libs.dock_op">
+<span id="db-libs-dock-op-module"></span><h2>db_libs.dock_op module<a class="headerlink" href="#module-db_libs.dock_op" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="db_libs.dock_op.Dock_init">
+<em class="property">class </em><code class="descclassname">db_libs.dock_op.</code><code class="descname">Dock_init</code><span class="sig-paren">(</span><em>data_dir</em>, <em>dock_folder</em>, <em>smina_path</em>, <em>dock_param</em><span class="sig-paren">)</span><a class="headerlink" href="#db_libs.dock_op.Dock_init" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="db_libs.dock_op.Dock_init.arg_options">
+<code class="descname">arg_options</code><em class="property"> = ['no_lig', 'score_only', 'local_only', 'minimize', 'randomize_only', 'accurate_line', 'print_terms', 'print_atom_types', 'atom_term_data', 'quiet', 'flex_hydrogen', 'help', 'help_hidden', 'version']</em><a class="headerlink" href="#db_libs.dock_op.Dock_init.arg_options" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="db_libs.dock_op.Dock_init.kw_options">
+<code class="descname">kw_options</code><em class="property"> = ['receptor', 'ligand', 'out', 'flex', 'flexres', 'flexdist_ligand', 'flexdist', 'center_x', 'center_y', 'center_z', 'size_x', 'size_y', 'size_z', 'autobox_ligand', 'autobox_add', 'scoring', 'custom_scoring', 'minimize_iters', 'approximation', 'factor', 'force_cap', 'user_grid', 'user_grid_lambda', 'out_flex', 'log', 'atom_terms', 'cpu', 'seed', 'exhaustiveness', 'num_modes', 'energy_range', 'min_rmsd_filter', 'addH', 'config']</em><a class="headerlink" href="#db_libs.dock_op.Dock_init.kw_options" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="db_libs.dock_op.Dock_init.make_command">
+<code class="descname">make_command</code><span class="sig-paren">(</span><em>*arg</em>, <em>**kw</em><span class="sig-paren">)</span><a class="headerlink" href="#db_libs.dock_op.Dock_init.make_command" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="db_libs.dock_op.Dock_init.param_load">
+<code class="descname">param_load</code><span class="sig-paren">(</span><em>param</em><span class="sig-paren">)</span><a class="headerlink" href="#db_libs.dock_op.Dock_init.param_load" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="db_libs.dock_op.Dock_init.this_module">
+<code class="descname">this_module</code><em class="property"> = &lt;module 'db_libs.dock_op' from '/Users/Will/projects/reformat/op_libs/core/affinityDB/db_libs/dock_op.pyc'&gt;</em><a class="headerlink" href="#db_libs.dock_op.Dock_init.this_module" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="db_libs.dock_op.dock">
+<code class="descclassname">db_libs.dock_op.</code><code class="descname">dock</code><span class="sig-paren">(</span><em>rec_outpath</em>, <em>reorder_outpath</em>, <em>init='dock_init'</em><span class="sig-paren">)</span><a class="headerlink" href="#db_libs.dock_op.dock" title="Permalink to this definition">¶</a></dt>
+<dd><p>Docking the ligand by smina</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>rec_outpath</strong> – str:: relative path for receptor</li>
+<li><strong>reorder_outpath</strong> – str:: relative path for reorder ligand</li>
+<li><strong>init</strong> – str:: init func naem</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">nested list:: docking result contains the relative path for receptor, reorder ligand and docked ligand</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-db_libs.download_pdb_op">
+<span id="db-libs-download-pdb-op-module"></span><h2>db_libs.download_pdb_op module<a class="headerlink" href="#module-db_libs.download_pdb_op" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="db_libs.download_pdb_op.Download_pdb_init">
+<em class="property">class </em><code class="descclassname">db_libs.download_pdb_op.</code><code class="descname">Download_pdb_init</code><span class="sig-paren">(</span><em>db_root</em>, <em>download_dir</em><span class="sig-paren">)</span><a class="headerlink" href="#db_libs.download_pdb_op.Download_pdb_init" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="db_libs.download_pdb_op.Download_pdb_init.this_module">
+<code class="descname">this_module</code><em class="property"> = &lt;module 'db_libs.download_pdb_op' from '/Users/Will/projects/reformat/op_libs/core/affinityDB/db_libs/download_pdb_op.pyc'&gt;</em><a class="headerlink" href="#db_libs.download_pdb_op.Download_pdb_init.this_module" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="db_libs.download_pdb_op.download_pdb">
+<code class="descclassname">db_libs.download_pdb_op.</code><code class="descname">download_pdb</code><span class="sig-paren">(</span><em>pdb_id</em>, <em>init='download_pdb_init'</em><span class="sig-paren">)</span><a class="headerlink" href="#db_libs.download_pdb_op.download_pdb" title="Permalink to this definition">¶</a></dt>
+<dd><p>Download PDB protein structure from the Protein Data Bank.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>pdb_id</strong> – string (4-letter PDB ID IE: 1QGT)</li>
+<li><strong>dir_path</strong> – string (folder in which to save the pdb file)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">nested list (it is always 1x1xstring where string is the relative path to the output file)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-db_libs.generate_conformers_op">
+<span id="db-libs-generate-conformers-op-module"></span><h2>db_libs.generate_conformers_op module<a class="headerlink" href="#module-db_libs.generate_conformers_op" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="db_libs.generate_conformers_op.GenerateConformersInit">
+<em class="property">class </em><code class="descclassname">db_libs.generate_conformers_op.</code><code class="descname">GenerateConformersInit</code><span class="sig-paren">(</span><em>num_conformers</em><span class="sig-paren">)</span><a class="headerlink" href="#db_libs.generate_conformers_op.GenerateConformersInit" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="db_libs.generate_conformers_op.GenerateConformersInit.this_module">
+<code class="descname">this_module</code><em class="property"> = &lt;module 'db_libs.generate_conformers_op' from '/Users/Will/projects/reformat/op_libs/core/affinityDB/db_libs/generate_conformers_op.pyc'&gt;</em><a class="headerlink" href="#db_libs.generate_conformers_op.GenerateConformersInit.this_module" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="db_libs.generate_conformers_op.generate_conformers">
+<code class="descclassname">db_libs.generate_conformers_op.</code><code class="descname">generate_conformers</code><span class="sig-paren">(</span><em>cryst_lig_file</em>, <em>out_pdb_path</em>, <em>init='generate_conformers_init'</em>, <em>keepHs=False</em><span class="sig-paren">)</span><a class="headerlink" href="#db_libs.generate_conformers_op.generate_conformers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Performs the following tasks:
+&gt; Converts the PDB molecule in lig_file into a mol object
+&gt; (Optional) Save single-frame file in Mol format for future use
+&gt; Generates conformers for this mol object
+&gt; Save multi-frame ligand to out_pdb_path in PDB format</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>cryst_lig_file</strong> – </li>
+<li><strong>out_pdb_path</strong> – </li>
+<li><strong>init</strong> – </li>
+<li><strong>keepHs</strong> – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-db_libs.get_decoys_op">
+<span id="db-libs-get-decoys-op-module"></span><h2>db_libs.get_decoys_op module<a class="headerlink" href="#module-db_libs.get_decoys_op" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="db_libs.get_decoys_op.GetDecoysInit">
+<em class="property">class </em><code class="descclassname">db_libs.get_decoys_op.</code><code class="descname">GetDecoysInit</code><span class="sig-paren">(</span><em>all_pdb_files</em>, <em>all_mol_files</em>, <em>all_mols</em>, <em>all_num_atoms</em>, <em>max_atom_dif</em>, <em>max_substruct</em>, <em>max_num_decoys</em><span class="sig-paren">)</span><a class="headerlink" href="#db_libs.get_decoys_op.GetDecoysInit" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="db_libs.get_decoys_op.GetDecoysInit.this_module">
+<code class="descname">this_module</code><em class="property"> = &lt;module 'db_libs.get_decoys_op' from '/Users/Will/projects/reformat/op_libs/core/affinityDB/db_libs/get_decoys_op.pyc'&gt;</em><a class="headerlink" href="#db_libs.get_decoys_op.GetDecoysInit.this_module" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="db_libs.get_decoys_op.get_decoys">
+<code class="descclassname">db_libs.get_decoys_op.</code><code class="descname">get_decoys</code><span class="sig-paren">(</span><em>pdb_file</em>, <em>mol_file</em>, <em>num_atoms</em>, <em>init='get_decoys_init'</em><span class="sig-paren">)</span><a class="headerlink" href="#db_libs.get_decoys_op.get_decoys" title="Permalink to this definition">¶</a></dt>
+<dd><p>For each binding ligand, get a list of decoy ligands. We filter by number of atoms and maximum common
+substructure (MCS). Returns filepaths to all binding ligand - decoy pair.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>pdb_file</strong> – </li>
+<li><strong>mol_file</strong> – </li>
+<li><strong>num_atoms</strong> – </li>
+<li><strong>init</strong> – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-db_libs.reorder_op">
+<span id="db-libs-reorder-op-module"></span><h2>db_libs.reorder_op module<a class="headerlink" href="#module-db_libs.reorder_op" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="db_libs.reorder_op.Reorder_init">
+<em class="property">class </em><code class="descclassname">db_libs.reorder_op.</code><code class="descname">Reorder_init</code><span class="sig-paren">(</span><em>data_dir</em>, <em>reorder_folder</em>, <em>smina_path</em>, <em>dock_param</em><span class="sig-paren">)</span><a class="headerlink" href="#db_libs.reorder_op.Reorder_init" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="db_libs.reorder_op.Reorder_init.arg_options">
+<code class="descname">arg_options</code><em class="property"> = ['no_lig', 'score_only', 'local_only', 'minimize', 'randomize_only', 'accurate_line', 'print_terms', 'print_atom_types', 'atom_term_data', 'quiet', 'flex_hydrogen', 'help', 'help_hidden', 'version']</em><a class="headerlink" href="#db_libs.reorder_op.Reorder_init.arg_options" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="db_libs.reorder_op.Reorder_init.kw_options">
+<code class="descname">kw_options</code><em class="property"> = ['receptor', 'ligand', 'out', 'flex', 'flexres', 'flexdist_ligand', 'flexdist', 'center_x', 'center_y', 'center_z', 'size_x', 'size_y', 'size_z', 'autobox_ligand', 'autobox_add', 'scoring', 'custom_scoring', 'minimize_iters', 'approximation', 'factor', 'force_cap', 'user_grid', 'user_grid_lambda', 'out_flex', 'log', 'atom_terms', 'cpu', 'seed', 'exhaustiveness', 'num_modes', 'energy_range', 'min_rmsd_filter', 'addH', 'config']</em><a class="headerlink" href="#db_libs.reorder_op.Reorder_init.kw_options" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="db_libs.reorder_op.Reorder_init.make_command">
+<code class="descname">make_command</code><span class="sig-paren">(</span><em>*arg</em>, <em>**kw</em><span class="sig-paren">)</span><a class="headerlink" href="#db_libs.reorder_op.Reorder_init.make_command" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="db_libs.reorder_op.Reorder_init.param_load">
+<code class="descname">param_load</code><span class="sig-paren">(</span><em>param</em><span class="sig-paren">)</span><a class="headerlink" href="#db_libs.reorder_op.Reorder_init.param_load" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="db_libs.reorder_op.Reorder_init.this_module">
+<code class="descname">this_module</code><em class="property"> = &lt;module 'db_libs.reorder_op' from '/Users/Will/projects/reformat/op_libs/core/affinityDB/db_libs/reorder_op.pyc'&gt;</em><a class="headerlink" href="#db_libs.reorder_op.Reorder_init.this_module" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="db_libs.reorder_op.reorder">
+<code class="descclassname">db_libs.reorder_op.</code><code class="descname">reorder</code><span class="sig-paren">(</span><em>rec_outpath</em>, <em>lig_outpath</em>, <em>init='reorder_init'</em><span class="sig-paren">)</span><a class="headerlink" href="#db_libs.reorder_op.reorder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parse the ligand by smina, and then output it. So the order of the atom keeps the same as the docking result</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>rec_outpath</strong> – str:: relative path for receptor</li>
+<li><strong>lig_outpath</strong> – str:: relative path for ligand</li>
+<li><strong>init</strong> – str:: initialize module</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">nested list:: reorder result contains the relative path for receptor and relative path for reorder ligand</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-db_libs.save_record_tfr_op">
+<span id="db-libs-save-record-tfr-op-module"></span><h2>db_libs.save_record_tfr_op module<a class="headerlink" href="#module-db_libs.save_record_tfr_op" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="db_libs.save_record_tfr_op.save_record_tfr">
+<code class="descclassname">db_libs.save_record_tfr_op.</code><code class="descname">save_record_tfr</code><span class="sig-paren">(</span><em>filename</em>, <em>cryst_elem</em>, <em>cryst_coord</em>, <em>binders_elem</em>, <em>binders_coordsets</em>, <em>cryst_label</em>, <em>binders_labels</em>, <em>rec_elem</em>, <em>rec_coord</em><span class="sig-paren">)</span><a class="headerlink" href="#db_libs.save_record_tfr_op.save_record_tfr" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Params:</dt>
+<dd>filename: string (file path to the output file)
+pos_per_binder:  integer (number of positions per binder)
+cryst_elem: np.array shape=[n_elem] type=float32 (elements of the ligand)
+cryst_coord: np.array shape=[n_elem, 3] type=float32 (coordinates of the elements of the ligand)
+binders_elem: list of np.array of shape=[n_elem] type=float32 (elements of binders)
+binders_coordsets: list of np.array [pos_per_binder, n_elem, 3 ] (coordinate sets per each of the bidners)
+cryst_label: float32 (something about the crystal pose, like binding affinity)
+binders_labels: list of np.array shape=[pos_per_binder] type=float32
+rec_elem: np.array of shape [n_elem] of float32
+rec_coord: np.array of shape [n_elem, 3]</dd>
+</dl>
+<p>Returns: None</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-db_libs.split_pdb_op">
+<span id="db-libs-split-pdb-op-module"></span><h2>db_libs.split_pdb_op module<a class="headerlink" href="#module-db_libs.split_pdb_op" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="db_libs.split_pdb_op.Split_pdb_init">
+<em class="property">class </em><code class="descclassname">db_libs.split_pdb_op.</code><code class="descname">Split_pdb_init</code><span class="sig-paren">(</span><em>db_root</em>, <em>split_dir</em><span class="sig-paren">)</span><a class="headerlink" href="#db_libs.split_pdb_op.Split_pdb_init" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="db_libs.split_pdb_op.Split_pdb_init.this_module">
+<code class="descname">this_module</code><em class="property"> = &lt;module 'db_libs.split_pdb_op' from '/Users/Will/projects/reformat/op_libs/core/affinityDB/db_libs/split_pdb_op.pyc'&gt;</em><a class="headerlink" href="#db_libs.split_pdb_op.Split_pdb_init.this_module" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="db_libs.split_pdb_op.split_pdb">
+<code class="descclassname">db_libs.split_pdb_op.</code><code class="descname">split_pdb</code><span class="sig-paren">(</span><em>split_pdb</em>, <em>cuttoff_dist=8</em>, <em>min_rec_atom_num=100</em>, <em>min_lig_atom_num=5</em>, <em>discard_h=True</em>, <em>init='split_pdb_init'</em><span class="sig-paren">)</span><a class="headerlink" href="#db_libs.split_pdb_op.split_pdb" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Iterates through every molecule of the ligand in the receptor. Selects atoms of the receptor (and any chemicals,</dt>
+<dd>but not water) within within the cutoff distance of any atoms of the ligand. Saves ligand + selection of atoms
+around the receptor’s binding site into the folder.</dd>
+</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>split_pdb</strong> – string (relative path the the file to split)</li>
+<li><strong>cuttoff_dist</strong> – float (distance of any atoms in the binding site from any atom of the ligand to be saved)</li>
+<li><strong>min_rec_atom_num</strong> – minimun number of atoms be saved as binding site</li>
+<li><strong>min_lig_atom_num</strong> – minumum number of atoms for ligand to be saved</li>
+<li><strong>discard_h</strong> – Bool T/F (discard all hydrogens for both ligand and receptor defaults to True)</li>
+<li><strong>init</strong> – string (init function in this module)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">nested list of pairs of file names (multiple ligands each paired with selection of the binding site)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-db_libs.test_multout_op">
+<span id="db-libs-test-multout-op-module"></span><h2>db_libs.test_multout_op module<a class="headerlink" href="#module-db_libs.test_multout_op" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="db_libs.test_multout_op.Test_multout_init">
+<em class="property">class </em><code class="descclassname">db_libs.test_multout_op.</code><code class="descname">Test_multout_init</code><a class="headerlink" href="#db_libs.test_multout_op.Test_multout_init" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="db_libs.test_multout_op.Test_multout_init.this_module">
+<code class="descname">this_module</code><em class="property"> = &lt;module 'db_libs.test_multout_op' from '/Users/Will/projects/reformat/op_libs/core/affinityDB/db_libs/test_multout_op.pyc'&gt;</em><a class="headerlink" href="#db_libs.test_multout_op.Test_multout_init.this_module" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="db_libs.test_multout_op.test_multout">
+<code class="descclassname">db_libs.test_multout_op.</code><code class="descname">test_multout</code><span class="sig-paren">(</span><em>num</em>, <em>init='test_multout_init'</em><span class="sig-paren">)</span><a class="headerlink" href="#db_libs.test_multout_op.test_multout" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-db_libs.test_sum_op">
+<span id="db-libs-test-sum-op-module"></span><h2>db_libs.test_sum_op module<a class="headerlink" href="#module-db_libs.test_sum_op" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="db_libs.test_sum_op.Test_sum_init">
+<em class="property">class </em><code class="descclassname">db_libs.test_sum_op.</code><code class="descname">Test_sum_init</code><a class="headerlink" href="#db_libs.test_sum_op.Test_sum_init" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="db_libs.test_sum_op.Test_sum_init.this_module">
+<code class="descname">this_module</code><em class="property"> = &lt;module 'db_libs.test_sum_op' from '/Users/Will/projects/reformat/op_libs/core/affinityDB/db_libs/test_sum_op.pyc'&gt;</em><a class="headerlink" href="#db_libs.test_sum_op.Test_sum_init.this_module" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="db_libs.test_sum_op.test_sum">
+<code class="descclassname">db_libs.test_sum_op.</code><code class="descname">test_sum</code><span class="sig-paren">(</span><em>num1</em>, <em>num2</em>, <em>init='test_sum_init'</em><span class="sig-paren">)</span><a class="headerlink" href="#db_libs.test_sum_op.test_sum" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-db_libs.write_ars2_tfr_op">
+<span id="db-libs-write-ars2-tfr-op-module"></span><h2>db_libs.write_ars2_tfr_op module<a class="headerlink" href="#module-db_libs.write_ars2_tfr_op" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="db_libs.write_ars2_tfr_op.WriteARS2TFRInit">
+<em class="property">class </em><code class="descclassname">db_libs.write_ars2_tfr_op.</code><code class="descname">WriteARS2TFRInit</code><span class="sig-paren">(</span><em>num_bind_confs</em>, <em>num_decoy_confs</em>, <em>num_decoys</em><span class="sig-paren">)</span><a class="headerlink" href="#db_libs.write_ars2_tfr_op.WriteARS2TFRInit" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="db_libs.write_ars2_tfr_op.WriteARS2TFRInit.this_module">
+<code class="descname">this_module</code><em class="property"> = &lt;module 'db_libs.write_ars2_tfr_op' from '/Users/Will/projects/reformat/op_libs/core/affinityDB/db_libs/write_ars2_tfr_op.pyc'&gt;</em><a class="headerlink" href="#db_libs.write_ars2_tfr_op.WriteARS2TFRInit.this_module" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="db_libs.write_ars2_tfr_op.write_ars2_tfr">
+<code class="descclassname">db_libs.write_ars2_tfr_op.</code><code class="descname">write_ars2_tfr</code><span class="sig-paren">(</span><em>rec_file</em>, <em>cryst_lig_file</em>, <em>bind_lig_file</em>, <em>decoy_files</em>, <em>out_tfr_file</em>, <em>init='write_ars2_tfr_init'</em><span class="sig-paren">)</span><a class="headerlink" href="#db_libs.write_ars2_tfr_op.write_ars2_tfr" title="Permalink to this definition">¶</a></dt>
+<dd><p>For each protein/ligand crystal pair, write one tfrecord with the following:
+&gt; rec_elem, rec_coord, cryst_elem, cryst_coord
+&gt; lig_nelems, lig_elem, lig_nframes, lig_coordsets, lig_labels
+Params:</p>
+<blockquote>
+<div>rec_file: filepath to receptor PDB
+cryst_lig_file: filepath to crystal ligand PDB
+bind_lig_file: filepath to conformers of crystal ligand PDB
+decoy_files: comma separated filepath to decoy ligands PDB
+out_tfr_file: filepath to write tf record to</div></blockquote>
+</dd></dl>
+
+</div>
+<div class="section" id="module-db_libs">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-db_libs" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Affinity Team.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
